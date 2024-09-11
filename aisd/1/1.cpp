@@ -110,7 +110,7 @@ void freeList(Node*& head) {
 }
 
 int main() {
-    char a[10], b[10], c[10], d[10], e[10];
+    char a[80], b[80], c[80], d[80], e[10];
     int sizeA = 0, sizeB = 0, sizeC = 0, sizeD = 0, eSize = 0;
 
     inputArray('A', a, sizeA);
