@@ -1,6 +1,4 @@
 #include <iostream>
-#include <cstring>
-#include <cstdlib>
 
 bool existsInArray(const char arr[], int size, char value) {
     for (int i = 0; i < size; ++i) {

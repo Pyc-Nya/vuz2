@@ -1,5 +1,4 @@
 #include <iostream>
-#include <bitset>
 
 typedef unsigned int Word;
 

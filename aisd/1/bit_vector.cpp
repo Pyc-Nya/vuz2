@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstring>
 
 const int MAX_DIGITS = 10;
 
