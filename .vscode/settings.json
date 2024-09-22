@@ -41,6 +41,9 @@
     "stdexcept": "cpp",
     "streambuf": "cpp",
     "typeinfo": "cpp",
-    "bitset": "c"
+    "bitset": "c",
+    "LAB01.C": "cpp",
+    "stdio.h": "c",
+    "string.h": "c"
   }
 }
