@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 const int sizeOfInt = sizeof(int) * 8;
 
