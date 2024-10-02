@@ -1,4 +1,13 @@
-#include "SetArray.h"  
+// main.cpp
+#include <iostream>
+#include <ctime> // Для измерения времени
+// Подключите нужный заголовочный файл
+// #include "SetArray.h"
+// #include "SetList.h"
+// #include "SetBitVector.h"
+#include "SetWord.h"
+
+const int cycleRepeat = 10000000; 
 
 int main() {
     Set A, B, C, D, E;
@@ -9,8 +18,18 @@ int main() {
     D.input('D');
 
     E = (A & B) - (C | D);
-
     E.output('E');
+
+    clock_t startTime = clock();
+
+    for (int i = 0; i < cycleRepeat; ++i) {
+        E = (A & B) - (C | D);
+    }
+
+    clock_t endTime = clock();
+    double duration = static_cast<double>(endTime - startTime) / CLOCKS_PER_SEC;
+
+    std::cout << "Время выполнения операции " << cycleRepeat << " раз: " << duration << " секунд." << std::endl;
 
     return 0;
 }
