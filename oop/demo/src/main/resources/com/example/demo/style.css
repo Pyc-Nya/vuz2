@@ -1,0 +1,19 @@
+.list-view {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 600px;
+    -fx-background-color: white;
+    -fx-border-color: gray;
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+    -fx-overflow: auto;
+}
+
+.list-cell {
+    -fx-background-color: #f2f2f2;
+    -fx-padding: 10px 20px;
+    -fx-margin-bottom: 10px;
+}
+
+.list-cell:last-child {
+    -fx-margin-bottom: 0;
+}

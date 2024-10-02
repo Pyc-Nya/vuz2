@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo.ListController" alignment="CENTER" spacing="10">
+
+  <HBox>
+    <Button text="Add Item" onAction="#handleAddItem"/>
+    <Button text="Remove Item" onAction="#handleRemoveItem" />
+  </HBox>
+
+  <ListView fx:id="listView" prefWidth="300" prefHeight="600" />
+
+</VBox>
+
