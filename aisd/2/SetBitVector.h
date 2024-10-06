@@ -22,7 +22,7 @@ public:
 
     void input(char name) {
         char A[80] = {0};
-        std::cout << "Введите элементы множества " << name << " (десятичные цифры): ";
+        std::cout << "Enter elements of set " << name << " (decimal numbers): ";
         std::cin >> A;
         for (int i = 0; i < 10; ++i) bits[i] = false;
         for (int i = 0; A[i] != '\0'; ++i) {
@@ -33,7 +33,7 @@ public:
     }
 
     void output(char name) const {
-        std::cout << "Множество " << name << ": [";
+        std::cout << "Set " << name << ": [";
         bool first = true;
         for (int i = 0; i < 10; ++i) {
             if (bits[i]) {
@@ -73,14 +73,6 @@ public:
         Set result;
         for (int i = 0; i < 10; ++i) {
             result.bits[i] = !bits[i];
-        }
-        return result;
-    }
-
-    Set operator-(const Set& other) const {
-        Set result;
-        for (int i = 0; i < 10; ++i) {
-            result.bits[i] = bits[i] && !other.bits[i];
         }
         return result;
     }

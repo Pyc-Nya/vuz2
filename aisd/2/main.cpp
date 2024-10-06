@@ -1,7 +1,5 @@
-// main.cpp
 #include <iostream>
-#include <ctime> // Для измерения времени
-// Подключите нужный заголовочный файл
+#include <ctime>
 // #include "SetArray.h"
 // #include "SetList.h"
 // #include "SetBitVector.h"
@@ -17,19 +15,19 @@ int main() {
     C.input('C');
     D.input('D');
 
-    E = (A & B) - (C | D);
+    E = (A & B) & !(C | D);
     E.output('E');
 
     clock_t startTime = clock();
 
     for (int i = 0; i < cycleRepeat; ++i) {
-        E = (A & B) - (C | D);
+        E = (A & B) & !(C | D);
     }
 
     clock_t endTime = clock();
     double duration = static_cast<double>(endTime - startTime) / CLOCKS_PER_SEC;
 
-    std::cout << "Время выполнения операции " << cycleRepeat << " раз: " << duration << " секунд." << std::endl;
+    std::cout << "Time for " << cycleRepeat << " operations: " << duration << " seconds." << std::endl;
 
     return 0;
 }

@@ -44,6 +44,8 @@
     "bitset": "c",
     "LAB01.C": "cpp",
     "stdio.h": "c",
-    "string.h": "c"
+    "string.h": "c",
+    "TEST.C": "cpp",
+    "TEST2.C": "cpp"
   }
 }

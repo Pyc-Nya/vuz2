@@ -51,7 +51,7 @@ public:
 
     void input(char name) {
         char A[80] = {0};
-        std::cout << "Введите элементы множества " << name << " (десятичные цифры): ";
+        std::cout << "Enter elements of set " << name << " (decimal numbers): ";
         std::cin >> A;
         clear();
         for (int i = 0; A[i] != '\0'; ++i) {
@@ -62,7 +62,7 @@ public:
     }
 
     void output(char name) const {
-        std::cout << "Множество " << name << ": [";
+        std::cout << "Set " << name << ": [";
         Node* temp = head;
         while (temp) {
             std::cout << temp->data;
@@ -112,18 +112,6 @@ public:
             if (!contains(c)) {
                 result.append(c);
             }
-        }
-        return result;
-    }
-
-    Set operator-(const Set& other) const {
-        Set result;
-        Node* temp = head;
-        while (temp) {
-            if (!other.contains(temp->data)) {
-                result.append(temp->data);
-            }
-            temp = temp->next;
         }
         return result;
     }

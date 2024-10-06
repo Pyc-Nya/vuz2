@@ -21,7 +21,7 @@ public:
 
     void input(char name) {
         char A[80] = {0};
-        std::cout << "Введите элементы множества " << name << " (десятичные цифры): ";
+        std::cout << "Enter elements of set " << name << " (decimal numbers): ";
         std::cin >> A;
         bits = 0;
         for (int i = 0; A[i] != '\0'; ++i) {
@@ -32,7 +32,7 @@ public:
     }
 
     void output(char name) const {
-        std::cout << "Множество " << name << ": [";
+        std::cout << "Set " << name << ": [";
         bool first = true;
         for (int i = 0; i <= 9; ++i) {
             if (bits & (1 << i)) {
@@ -67,12 +67,6 @@ public:
     Set operator!() const {
         Set result;
         result.bits = ~bits & 0x3FF; // Маска для 10 бит
-        return result;
-    }
-
-    Set operator-(const Set& other) const {
-        Set result;
-        result.bits = bits & ~(other.bits);
         return result;
     }
 };
