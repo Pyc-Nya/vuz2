@@ -46,6 +46,8 @@
     "stdio.h": "c",
     "string.h": "c",
     "TEST.C": "cpp",
-    "TEST2.C": "cpp"
+    "TEST2.C": "cpp",
+    "LABA3.C": "cpp",
+    "L3.C": "cpp"
   }
 }
